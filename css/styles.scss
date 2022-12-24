@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Nunito','Padauk', sans-serif;
+  // font-family: 'Padauk', sans-serif;
+}
+
+marquee{
+  font-family: 'Padauk','PT Sans',sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+p,li{
+  font-family: 'PT Sans', sans-serif;
+}
+
+#test{
+  box-shadow: -20px -20px #ffc300;
+}
+
+#test-2{
+  box-shadow: 20px 20px #2e3192;
+}
+
+#carouselExampleFade{
+  
+  z-index: 1;
+}
+// #footer{
+//   // background-image: linear-gradient(to top, #abd6f4,#c7def8, #dfe8fb, #f1f3fd, #ffffff);
+// }
+.c-logo{
+  filter: grayscale(90%);
+  transition: 0.5s ease-in-out;
+}
+
+.c-logo:hover{
+  filter: grayscale(0%);
+}
+
+// #photo-blur{
+//   background-image: url('assets/Background.png');
+//   filter: blur(40px);
+
+// }
+
+// .site-navbar{
+//   background-color: rgba(255,255,255,0.8);
+//   box-shadow: $box-shadow-sm;
+//   backdrop-filter: blur(5px) contrast(180%);
+//   z-index: 1050 !important;
+// }
+
+
+
+
+$primary : #2e3192;
+$secondary : #597dc6;
+$success : #4357ac;
+$danger: #ffc300;
+$info : #343a40;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=PT+Sans:wght@400;700&family=Padauk:wght@400;700&display=swap');
+@import "../node_modules/animate.css/animate.min.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
