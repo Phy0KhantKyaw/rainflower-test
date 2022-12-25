@@ -22,11 +22,24 @@
   let nptShow = document.getElementById('nptShow');
   let nptShow1 = document.getElementById('nptShow1');
 
-  
+
 
     // function changeLanguage(lang){
     //   location.hash = lang;
     //   location.reload(); 
+    //   location.reload();
+    // }
+
+  
+    // function navScroll(){
+
+    //  document.getElementById("site-nav").classList.add("position-fixed");
+    //  document.getElementById("site-nav").classList.add("w-100");
+    //  document.getElementById("site-nav").classList.add("side-navbar");
+     
+
+     
+
     // }
 
     function navChangeMyanmar(){

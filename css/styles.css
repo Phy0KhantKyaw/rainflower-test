@@ -4,7 +4,19 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 * {
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", "Padauk", sans-serif;
+}
+
+.side-navbar {
+  z-index: 1005;
+  background-color: rgba(255, 255, 255, 0.6117647059) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+}
+
+.mar {
+  position: absolute;
+  top: 87px;
 }
 
 marquee {

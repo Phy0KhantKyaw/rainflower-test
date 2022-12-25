@@ -4,6 +4,19 @@
   // font-family: 'Padauk', sans-serif;
 }
 
+.side-navbar{
+  z-index: 1005;
+  background-color: #ffffff9c !important;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.mar{
+  position: absolute;
+  top: 87px;
+
+}
+
+
 marquee{
   font-family: 'Padauk','PT Sans',sans-serif;
 }
@@ -26,7 +39,7 @@ p,li{
 }
 
 #carouselExampleFade{
-  
+
   z-index: 1;
 }
 // #footer{
