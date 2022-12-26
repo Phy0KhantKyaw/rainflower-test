@@ -1,4 +1,9 @@
 
+
+
+
+
+
   let chgLang = document.getElementById('navDrop').textContent;
   let siteLang = document.getElementById('siteContent');
 

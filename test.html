@@ -6,87 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testing</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="node_modules/atropos/atropos.min.css">
+  <style>
+
+  </style>
 </head>
 <body>
+ 
   
-    <div class="p-t-4">
-        <div id="carousel-angled" class="carousel slide carousel-angled" data-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="assets/RainFlower _0083.JPG" alt="First slide">
-              <div class="carousel-caption">
-                
-                <h2 class="m-b-2">Sophie, living abroad<span class="text-info">.</span></h2>
-                <p class="small">I tell everyone about TransferWise. I’ve told half the Brits on Bondi!</p>
-                <a class="btn btn-default" role="button" href="">Sophie's story</a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="assets/RainFlower _0084.JPG" alt="Second slide">
-              <div class="carousel-caption">
-                <h2 class="m-b-2">Salvador, Philippines<span class="text-info">.</span></h2>
-                <p class="small">Every single transaction was a breeze, no stress, no glitch.
-                </p>
-                <a class="btn btn-default" role="button" href="">Salvador's story</a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="assets/RainFlower _0096.JPG" alt="Third slide">
-              <div class="carousel-caption">
-                <h2 class="m-b-2">Mathu from India<span class="text-info">.</span></h2>
-                <p class="small">I live abroad &amp; also have my connection back to India by sending money to my family. </p>
-              </div>
-            </div>
-          </div>
-          <div class="container carousel-control-container">
-            <a class="carousel-control" href="#carousel-angled" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control" href="#carousel-angled" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-angled" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-angled" data-slide-to="1"></li>
-            <li data-target="#carousel-angled" data-slide-to="2"></li>
-          </ol>
-        </div>
-      </div>
-    
-      <div class="modal fade" id="language" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Choose Your Prefer Language</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="english">
-                <label class="form-check-label" for="english">
-                  English
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="myanmar" checked>
-                <label class="form-check-label" for="myanmar">
-                  မြန်မာ
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-         <!-- <button class="btn btn-outline-primary" onclick="changeLanguage('eng')">Change to English</button>
-              <button class="btn btn-outline-primary" onclick="changeLanguage('mm')">Change to Myanmar</button> -->
+ 
 
+  <section id="photo-blur">
+    <div class="container-fluid bg-light">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-10 mt-5 p-0 text-center">
+      
+<div class="atropos my-atropos">
+  <div class="atropos-scale">
+    <div class="atropos-rotate">
+      <div class="atropos-inner rounded-4 mb-5">
+        
+             <div class="position-relative">
+              <div class="aback rounded-4 border border-2  py-5 text-center">
+                <h1 class="display-3 mb-4 text-primary" data-atropos-offset="2" id="serviceLang0">Our Services</h1>
+                  <div class="text-start mx-3 ps-3   ms-lg-5 ps-lg-5" data-atropos-offset="1">
+                      <p class="mb-3 ms-lg-5 ps-lg-5" id="serviceLang1">We suggest the customers where to keep & How to use of Fire Extinguisher products.</p>
+                      <p class="ms-lg-5 ps-lg-5" id="serviceLang2">3 Years (or) 5 Years warranty for our products.</p>
+                      <p class="my-3 ms-lg-5 ps-lg-5" id="serviceLang3">Door to Door delivery & installation service in Yangon, Mandalay & Naypyitaw Area.</p>
+                      <p class="ms-lg-5 ps-lg-5" id="serviceLang4">Refill & new change services.</p>
+                      <p class="my-3 ms-lg-5 ps-lg-5" id="serviceLang5">Inspection for fire extinguishers.</p>
+                      <p class="ms-lg-5 ps-lg-5" id="serviceLang6">Fire extinguisher demonstration</p>
+                     </div>
+                     <img src="assets/Maintenance-pana.svg" data-atropos-offset="-1" id="atro" alt="">
+              </div>
+             </div>
+               
+                 
+                  
+                 
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/atropos/atropos.min.js"></script>
+  <script>
+    const myAtropos = Atropos({
+      el: '.my-atropos',
+      // rest of parameters
+      activeOffset: 40,
+  shadowScale: 1,
+ 
+    });
+  </script>
 </body>
 </html>
+

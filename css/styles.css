@@ -14,6 +14,20 @@
           backdrop-filter: saturate(180%) blur(20px);
 }
 
+.atropos-inner {
+  background: linear-gradient(to top, #e8eaeb, #eceeef, #f0f1f3, #f4f5f6, #f8f9fa);
+}
+
+#atro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
 .mar {
   position: absolute;
   top: 87px;
