@@ -7,6 +7,10 @@
   font-family: "Nunito", "Padauk", sans-serif;
 }
 
+.bdg {
+  background: url("../assets/bg-01.jpg") no-repeat;
+}
+
 .side-navbar {
   z-index: 1005;
   background-color: rgba(255, 255, 255, 0.6117647059) !important;
@@ -15,7 +19,27 @@
 }
 
 .atropos-inner {
-  background: linear-gradient(to top, #e8eaeb, #eceeef, #f0f1f3, #f4f5f6, #f8f9fa);
+  background-color: rgba(255, 255, 255, 0.6117647059) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(3px);
+          backdrop-filter: saturate(180%) blur(3px);
+}
+
+.card-img-top {
+  transition: 0.5s ease-in;
+}
+
+.card-img-top:hover {
+  transform: scale(1.5);
+}
+
+#htu {
+  background-image: url("../assets/webb.png");
+  height: 400px;
+  overflow: visible;
+}
+
+#trusted {
+  background-image: url("../assets/webb.png");
 }
 
 #atro {

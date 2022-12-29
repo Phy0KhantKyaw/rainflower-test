@@ -4,15 +4,43 @@
   // font-family: 'Padauk', sans-serif;
 }
 
+.bdg{
+  background: url('../assets/bg-01.jpg') no-repeat;
+}
+
 .side-navbar{
   z-index: 1005;
   background-color: #ffffff9c !important;
   backdrop-filter: saturate(180%) blur(20px);
 }
 
+
+
 .atropos-inner{
   // background-image: url('assets/Maintenance-pana.svg');
-  background: linear-gradient(to top, #e8eaeb, #eceeef, #f0f1f3, #f4f5f6, #f8f9fa);
+  // background: linear-gradient(to top, #e8eaeb, #eceeef, #f0f1f3, #f4f5f6, #f8f9fa);
+  background-color: #ffffff9c !important;
+  backdrop-filter: saturate(180%) blur(3px);
+}
+
+.card-img-top{
+  transition: 0.5s ease-in ;
+}
+
+.card-img-top:hover{
+  transform: scale(1.5);
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#htu{
+  background-image: url('../assets/webb.png');
+  height: 400px;
+  overflow: visible;
+}
+
+#trusted{
+  background-image: url('../assets/webb.png');
+
 }
 
 #atro{
