@@ -76,11 +76,34 @@
             </div>
             <div class="col-10 mt-4">
               
-              <div class="border-end border-primary px-3">
+              <div class="border-end border-primary lh-base px-3">
                 
-                <p class="fs-4">Beginning in 2001,Rain Flower has grown to become Myanmar's first and largest distributor of hand portable and trolly fire extinguishers for home or industrial applications.</p>
-                <p class="fs-5 text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique fuga distinctio minus aut magni iusto ad adipisci quod, blanditiis nisi consectetur nam. Nulla quaerat dignissimos asperiores assumenda provident culpa?</p>
-                <p class="fs-5">The fire protection industry has seen sweeping advances take place over the past 20 years and most test standards have been revised to keep up with modern day fire hazards.</p>
+                <p id="aboutLang0" class="fs-4">The Rain Flower brand fire extinguisher has been imported and distributed to Myanmar since 2001. In 2001, the showroom of fire extinguishers was successfully established in Yangon downtown area with delivery, installation and explanation the knowledges of fire safety to the public. And the other provinces were sold through the highway gates.</p>
+                <p id="aboutLang1" class="fs-4 text-black-50">In 2003, the branch Showroom of Rain Flower Fire Extinguisher was opened in Mandalay. And in 2008, the branch Showroom was also opened in the country’s city, Naypyidaw. In 2013, another branch Showroom of Yangon was opened on the Pyay Road.</p>
+                <p id="aboutLang2" class="fs-4">Beginning in 2016, the Rain Flower has improved the quality and upgraded the guarantee years into five years. In 2022, with a better quality of stainless steel Fire Extinguishers were imported and distributed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="mission" class="">
+        <div class="container-fluid bg-success">
+          <div class="container py-5">
+            <div class="row py-5 border border-1 rounded-3 bg-light">
+              <div class="col-6 border-end">
+                <div class="">
+                   <h2 class="text-center mb-3 text-primary fw-bold">Vision</h2>
+                   <p class="text-warp fs-5 lh-base">"To be the leading and preferred fire extinguisher brand that offers high quality products and excellent customer services."</p>
+                </div>
+                
+              </div>
+              
+              <div class="col-6">
+                <div class="ms-3">
+                  <h2 class="text-center mb-3 text-primary fw-bold">Mission</h3>
+                  <p class="text-wrap fs-5">"A professional fire extinguisher brand providing good and reliable fire protection to protect lives and property with developing to enhance sustained growth of our company."</p>
+               </div>
               </div>
             </div>
           </div>
@@ -128,9 +151,41 @@
  
 
 
-
+<!-- <script src="js/app.js"></script> -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://app.embed.im/snow.js" defer></script>
+<script>
+  let chgLang = document.getElementById('navDrop').textContent;
+  let aboutLang0 = document.getElementById('aboutLang0');
+  let aboutLang1 = document.getElementById('aboutLang1');
+  let aboutLang2 = document.getElementById('aboutLang2');
+  function navChangeMyanmar(){
+      document.getElementById('navDrop').textContent = "Myanmar";      
+      aboutLang0.textContent = language.mm.aboutLang0;
+      aboutLang1.textContent = language.mm.aboutLang1;
+      aboutLang2.textContent = language.mm.aboutLang2;
 
+
+    }
+  function navChangeEnglish(){
+      document.getElementById('navDrop').textContent = "English";      
+      aboutLang0.textContent = language.eng.aboutLang0;
+      aboutLang1.textContent = language.eng.aboutLang1
+      aboutLang2.textContent = language.eng.aboutLang2;
+
+    }
+    let language = {
+      eng:{
+        aboutLang0: "The Rain Flower brand"+" fire extinguisher has been imported and distributed to Myanmar"+" since 2001. In 2001, the showroom of fire extinguishers"+" was successfully established in Yangon downtown area with delivery,"+" installation and explanation the knowledges of fire safety to the public."+" And the other provinces were sold through the highway gates.",
+        aboutLang1: "In 2003, the branch Showroom of Rain Flower Fire Extinguisher was opened in Mandalay. And in 2008, the branch Showroom was also opened in the country’s city, Naypyidaw. In 2013, another branch Showroom of Yangon was opened on the Pyay Road.",
+        aboutLang2: "Beginning in 2016, the Rain Flower has improved the quality and upgraded the guarantee years into five years. In 2022, with a better quality of stainless steel Fire Extinguishers were imported and distributed."
+      },
+      mm:{
+        aboutLang0: "Rain Flower"+" အမှတ်တံဆိပ် မီးသတ်ဆေးဘူးကို ၂၀၀၁ ခုနှစ်မှစတင်၍"+" မြန်မာနိုင်ငံသို့ တင်သွင်း ဖြန့်ဖြူးရောင်းချခဲ့ပါသည်။"+" ၂၀၀၁ ခုတွင် ရန်ကုန်မြို့တွင် အရောင်းပြခန်းတစ်ခုဖွင့်လှစ်ကာ အာမခံချက် (၃) နှစ် အပြည့်အဝပေးပြီး"+" ရန်ကုန်မြို့ဧရိယာအတွင်း တစ်ဘူးမှစ အိမ်အရောက်ပို့၊ တပ်ဆင်၊ ရှင်းပြပေးသော ဝန်ဆောင်မှုပေး၍ ရောင်းချခဲ့ပါသည်။"+" အ‌‌ခြားသော တိုင်းနှင့်ပြည်နယ်မြို့များသို့ ကားဂိတ်မှတဆင့် ပို့ဆောင်ပေးသောဝန်ဆောင်မှု များပေး၍ ရောင်းချခဲ့ပါသည်။",
+        aboutLang1: "၂၀၀၃ ခုနှစ်တွင် မန္တလေးမြို့တွင် အရောင်းပြခန်းတစ်ခု ထပ်မံဖွင့်လှစ် ရောင်းချခဲ့ပါသည်။ ၂၀၀၈ ခုနှစ်တွင် နေပြည်တော်မြို့တွင် အရောင်းပြခန်းတစ်ခု ထပ်မံဖွင့်လှစ် ရောင်းချနိုင်ခဲ့ပါသည်။ ၂၀၁၃ ခုနှစ်တွင် ရန်ကုန်မြို့၊ ပြည်လမ်းမပေါ်တွင် အရောင်းပြခန်း (၂) အား တိုးချဲ့ဖွင့်လှစ်ရောင်းချနိုင်ခဲ့ပါသည်။",
+        aboutLang2: "Rain Flower မီးသတ်ဆေးဘူးကို ၂၀၁၆ ခုနှစ်မှစတင်ပြီး အရည်အသွေးထပ်မံတိုးမြှင့်ပြီး အာမခံချက် (၅) နှစ်ပေးနိုင်သော မီးသတ်ဆေးဘူးများကို ထပ်မံတင်သွင်းရောင်းချခဲ့ပါသည်။ ၂၀၂၂ ခုနှစ်တွင် အရည်အသွေးပိုမိုကောင်းမွန်သော Stainless Steel မီးသတ်ဆေးဘူးများ ထပ်မံတင်သွင်းပြီး ဖြန့်ဖြူးရောင်းချနိုင်ခဲ့ပါသည်။"
+      }
+    };
+</script>
 </body>
 </html>

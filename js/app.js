@@ -15,6 +15,9 @@
   let serviceLang5 = document.getElementById('serviceLang5');
   let serviceLang6 = document.getElementById('serviceLang6');
 
+
+
+
   let show = document.getElementById('show');
   let ygnShow = document.getElementById('ygnShow');
   let ygnShow0 = document.getElementById('ygnShow0');
@@ -59,13 +62,14 @@
       serviceLang6.textContent = language.mm.Service6;
       show.textContent = language.mm.show;
       ygnShow.textContent = language.mm.ygnShow;
-      // ygnShow0.textContent = language.mm.ygnShow0;
+      ygnShow0.textContent = language.mm.ygnShow0;
       ygnShow1.textContent = language.mm.ygnShow1;
       ygnShow2.textContent = language.mm.ygnShow2;
       mdyShow.textContent = language.mm.mdyShow;
       mdyShow1.textContent = language.mm.mdyShow1;
       nptShow.textContent = language.mm.nptShow;
       nptShow1.textContent = language.mm.nptShow1;
+      
     }
 
     function navChangeEnglish(){
@@ -80,13 +84,14 @@
       serviceLang6.textContent = language.eng.Service6;
       show.textContent = language.eng.show;      
       ygnShow.textContent = language.eng.ygnShow;
-      // ygnShow0.textContent = language.eng.ygnShow0;
+      ygnShow0.textContent = language.eng.ygnShow0;
       ygnShow1.textContent = language.eng.ygnShow1;
       ygnShow2.textContent = language.eng.ygnShow2;
       mdyShow.textContent = language.eng.mdyShow;
       mdyShow1.textContent = language.eng.mdyShow1;
       nptShow.textContent = language.eng.nptShow;
       nptShow1.textContent = language.eng.nptShow1;
+      
     }
 
     let language = {
@@ -109,6 +114,7 @@
         mdyShow1: "Showroom No. 3 (MDY)"+"Corner of 78st x 42st, Near the No.11 Police Station, YGN-MDY Main Road, Chan Myae Thar Si Township, Mandalay."+"Phone: 09-777048106, 09-777048107",
         nptShow: "Nay Pyi Taw Showroom",
         nptShow1: "Showroom No. 4 (NPT)"+"No. (65-A/B), YGN-MDY Highway (old) Road, Pobbathiri Township, Naypyitaw."+"Phone: 09-777048108, 09-777048109",
+        
       },
       mm:{
         Welcome: "Rain Flower မီးသတ်ဆေးဘူးဖြန့်ချီရေး သည်"+
@@ -127,17 +133,18 @@
         mdyShow: "မန္တလေး အရောင်းပြခန်း",
         mdyShow1: "အရောင်းပြခန်း-၃(မန္တလေး)၊"+"၇၈လမ်းx၄၂လမ်းကြား,အမှတ်-၁၁ ရဲစခန်းအနီး,ရန်ကုန်-မန္တလေး မိန်းလမ်းမကြီး,ချမ်းမြသာစည်မြို့နယ်,မန္တလေး။"+"ဖုန်း : ၀၉-၇၇၇၀၄၈၁၀၆,၀၉-၇၇၇၀၄၈၁၀၇",
         nptShow: "နေပြည်တော် အရောင်းပြခန်း",
-        nptShow1: "အရောင်းပြခန်း-၄(နေပြည်တော်)၊"+"အမှတ်(၆၅-A/B),ရန်ကုန်-မန္တလေး အမြန်လမ်းဟောင်း,ပုပ္ဗသီရိမြို့နယ်,နေပြည်တော်။"+"ဖုန်း : ၀၉-၇၇၇၀၄၈၁၀၈,၀၉-၇၇၇၀၄၈၁၀၉"
+        nptShow1: "အရောင်းပြခန်း-၄(နေပြည်တော်)၊"+"အမှတ်(၆၅-A/B),ရန်ကုန်-မန္တလေး အမြန်လမ်းဟောင်း,ပုပ္ဗသီရိမြို့နယ်,နေပြည်တော်။"+"ဖုန်း : ၀၉-၇၇၇၀၄၈၁၀၈,၀၉-၇၇၇၀၄၈၁၀၉",
+       
       }
     };
 
-    if(chgLang == "Myanmar"){
-      siteLang.textContent = language.mm.Welcome;
+    // if(chgLang === "Myanmar"){
+    //   siteLang.textContent = language.mm.Welcome;
          
   
 
-    }else{
-      siteLang.textContent = language.eng.Welcome;
+    // }else{
+    //   siteLang.textContent = language.eng.Welcome;
       
       
-    }
+    // }

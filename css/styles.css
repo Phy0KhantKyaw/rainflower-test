@@ -20,8 +20,8 @@
 
 .atropos-inner {
   background-color: rgba(255, 255, 255, 0.6117647059) !important;
-  -webkit-backdrop-filter: saturate(180%) blur(3px);
-          backdrop-filter: saturate(180%) blur(3px);
+  -webkit-backdrop-filter: saturate(120%) blur(3px);
+          backdrop-filter: saturate(120%) blur(3px);
 }
 
 .card-img-top {
