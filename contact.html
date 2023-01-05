@@ -70,11 +70,11 @@
         <div class="row my-5">
             <div class="col-lg-4">
               <div class="">
-                <h3 class="fw-bold mb-2"><span class="text-secondary">Yangon</span> Showrooms</h3>
-                  <p class="mb-3">Showroom No. 1 (Ahlone) <br>
+                <h3 class="fw-bold mb-2 text-secondary" id="contactLang0">Yangon Showrooms</h3>
+                  <p class="mb-3" id="contactLang1">Showroom No. 1 (Ahlone) <br>
                     No. (162), Lower Kyee Myin Daing Road, East Saw Yan Paing Ward, Ahlone Township, Yangon. <br>
                     Phone: 09-777048090, 09-777048091, 09-73100890, 09-7310089</p>
-                    <p class="">
+                    <p class="" id="contactLang2">
                       Showroom No. 2 (9 Miles) <br>
                       Corner of Ocean Super Center, (9) Miles, Pyay Road, Mayangone Township, Yangon. <br>
                       Phone: 09-777048092, 09-777048093
@@ -84,8 +84,8 @@
             <div class="col-lg-4">
               <div class="">
                 <div class="">
-                  <h3 class="fw-bold mb-2"><span class="text-secondary">Mandalay</span> Showroom</h3>
-                    <p class="mb-3">Showroom No. 3 (MDY) <br>
+                  <h3 class="fw-bold mb-2 text-secondary" id="contactLang3">Mandalay Showroom</h3>
+                    <p class="mb-3" id="contactLang4">Showroom No. 3 (MDY) <br>
                       Corner of 78st x 42st, Near the No.11 Police Station, YGN-MDY Main Road, Chan Myae Thar Si Township, Mandalay. <br>
                       Phone: 09-777048106, 09-777048107</p>
                      
@@ -94,8 +94,8 @@
             </div>
             <div class="col-lg-4">
               <div class="">
-                <h3 class="fw-bold mb-2"><span class="text-secondary">Naypyitaw</span> Showroom</h3>
-                  <p class="mb-3">Showroom No. 4 (NPT) <br>
+                <h3 class="fw-bold mb-2 text-secondary" id="contactLang5">Naypyitaw Showroom</h3>
+                  <p class="mb-3" id="contactLang6">Showroom No. 4 (NPT) <br>
                     No. (65-A/B), YGN-MDY Highway (old) Road, Pobbathiri Township, Naypyitaw. <br>
                     Phone: 09-777048108, 09-777048109                      
                     </p>
@@ -151,6 +151,63 @@
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://app.embed.im/snow.js" defer></script>
+<script>
+  let chgLang = document.getElementById('navDrop').textContent;
+  let contactLang0 = document.getElementById('contactLang0');
+  let contactLang1 = document.getElementById('contactLang1');
+  let contactLang2 = document.getElementById('contactLang2');
+  let contactLang3 = document.getElementById('contactLang3');
+  let contactLang4 = document.getElementById('contactLang4');
+  let contactLang5 = document.getElementById('contactLang5');
+  let contactLang6 = document.getElementById('contactLang6');
 
+  function navChangeMyanmar(){
+      document.getElementById('navDrop').textContent = "Myanmar";      
+      contactLang0.textContent = language.mm.contactLang0;
+      contactLang1.textContent = language.mm.contactLang1;
+      contactLang2.textContent = language.mm.contactLang2;
+      contactLang3.textContent = language.mm.contactLang3;
+      contactLang4.textContent = language.mm.contactLang4;
+      contactLang5.textContent = language.mm.contactLang5;
+      contactLang6.textContent = language.mm.contactLang6;
+
+
+
+
+    }
+  function navChangeEnglish(){
+      document.getElementById('navDrop').textContent = "English";      
+      contactLang0.textContent = language.eng.contactLang0;
+      contactLang1.textContent = language.eng.contactLang1
+      contactLang2.textContent = language.eng.contactLang2;
+      contactLang3.textContent = language.eng.contactLang3;
+      contactLang4.textContent = language.eng.contactLang4;
+      contactLang5.textContent = language.mm.contactLang5;
+      contactLang6.textContent = language.mm.contactLang6;
+      
+
+    }
+    let language = {
+      eng:{
+        contactLang0: "Yangon"+" Showrooms",
+        contactLang1: "Showroom No. 1 (Ahlone) No. (162), Lower Kyee Myin Daing Road, East Saw Yan Paing Ward, Ahlone Township, Yangon.Phone: 09-777048090, 09-777048091, 09-73100890, 09-7310089",
+        contactLang2: "Showroom No. 2 (9 Miles)  Corner of Ocean Super Center, (9) Miles, Pyay Road, Mayangone Township, Yangon. Phone: 09-777048092, 09-777048093",
+        contactLang3: "Mandalay"+" Showroom",
+        contactLang4: "Showroom No. 3 (MDY)"+"Corner of 78st x 42st, Near the No.11 Police Station, YGN-MDY Main Road, Chan Myae Thar Si Township, Mandalay."+"Phone: 09-777048106, 09-777048107",
+        contactLang5: "Nay Pyi Taw"+" Showroom",
+        contactLang6: "Showroom No. 4 (NPT)"+"No. (65-A/B), YGN-MDY Highway (old) Road, Pobbathiri Township, Naypyitaw."+"Phone: 09-777048108, 09-777048109",
+      },
+      mm:{
+        contactLang0: "ရန်ကုန် အရောင်းပြခန်းများ",
+        contactLang1: "အရောင်းပြခန်း-၁(အလုံ)၊"+"အမှတ်(၁၆၂)အောက်ကြည့်မြင့်တိုင်လမ်း,အရှေ့စောရန်ပိုင်,အလုံမြို့နယ်,ရန်ကုန်။"+"ဖုန်း : ၀၉-၇၇၇၀၄၈၀၉၀, ၀၉-၇၇၇၀၄၈၀၉၁, ၀၉-၇၃၁၀၀၈၉၀, ၀၉-၇၃၁၀၀၈၉",
+        contactLang2: "အရောင်းပြခန်း-၂(၉မိုင်)၊"+"Ocean Super Center ဘေး,၉မိုင်,ပြည်လမ်း,မရမ်းကုန်းမြို့နယ်,ရန်ကုန်။"+"ဖုန်း : ၀၉-၇၇၇၀၄၈၀၉၂,၀၉-၇၇၇၀၄၈၀၉၃",
+        contactLang3: "မန္တလေး အရောင်းပြခန်း",
+        contactLang4: "အရောင်းပြခန်း-၃(မန္တလေး)၊"+"၇၈လမ်းx၄၂လမ်းကြား,အမှတ်-၁၁ ရဲစခန်းအနီး,ရန်ကုန်-မန္တလေး မိန်းလမ်းမကြီး,ချမ်းမြသာစည်မြို့နယ်,မန္တလေး။"+"ဖုန်း : ၀၉-၇၇၇၀၄၈၁၀၆,၀၉-၇၇၇၀၄၈၁၀၇",
+        contactLang5: "နေပြည်တော် အရောင်းပြခန်း",
+        contactLang6: "အရောင်းပြခန်း-၄(နေပြည်တော်)၊"+"အမှတ်(၆၅-A/B),ရန်ကုန်-မန္တလေး အမြန်လမ်းဟောင်း,ပုပ္ဗသီရိမြို့နယ်,နေပြည်တော်။"+"ဖုန်း : ၀၉-၇၇၇၀၄၈၁၀၈,၀၉-၇၇၇၀၄၈၁၀၉",
+      }
+    };
+
+</script>
 </body>
 </html>
