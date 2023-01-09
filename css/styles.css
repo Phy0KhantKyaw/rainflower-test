@@ -8,7 +8,15 @@
 }
 
 .bdg {
-  background: url("../assets/bg-01.jpg") no-repeat;
+  background: url("../assets/bg-01.jpg");
+}
+
+.nav-link {
+  transition: 3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #2e3192 !important;
 }
 
 .side-navbar {
@@ -34,7 +42,7 @@
 
 #htu {
   background-image: url("../assets/webb.png");
-  height: 400px;
+  height: 500px;
   overflow: visible;
 }
 
@@ -91,6 +99,17 @@ p, li {
   filter: grayscale(0%);
 }
 
+@media only screen and (min-width: 1200px) {
+  .how-to-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #htu {
+    overflow: scroll;
+  }
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
