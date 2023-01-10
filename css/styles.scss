@@ -22,17 +22,7 @@
   height: 200px;
 }
 
-@media only screen and (max-width: 768px) {
-/* For mobile phones: */
-[class*="service-img"] {
-width: 80%;
-height: auto; 
-}
-[class*="install-img"]{
-  width: 40%;
-  height: auto;
-}
-}
+
 .nav-link:hover{
   // border-bottom: 3px solid #2e3192 !important;
   color: #2e3192 !important;
@@ -43,7 +33,6 @@ height: auto;
   background-color: #ffffff9c !important;
   backdrop-filter: saturate(180%) blur(20px);
 }
-
 
 
 .atropos-inner{
@@ -70,7 +59,7 @@ height: auto;
 
 #trusted{
   background-image: url('../assets/webb.png');
-
+  
 }
 
 #atro{
@@ -152,6 +141,17 @@ p,li{
     overflow: scroll;
   }
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="service-img"] {
+  width: 80%;
+  height: auto; 
+  }
+  [class*="install-img"]{
+    width: 40%;
+    height: auto;
+  }
+  }
 $primary : #2e3192;
 $secondary : #597dc6;
 $success : #4357ac;

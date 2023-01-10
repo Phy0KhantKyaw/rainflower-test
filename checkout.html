@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rain Flower</title>
+  <link rel="icon" href="assets/Rain Flower Logo-01.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="node_modules/atropos/atropos.min.css">
+</head>
+<body>
+
+   <nav id="site-nav" class="navbar side-navbar shadow-sm position-fixed w-100  navbar-expand-lg navbar-light   container-fluid">
+      <div class="container">
+        <a class="navbar-brand text-primary fw-bold" href="#">
+         <img src="assets/Rain Flower Logo-01.png" class="nav-brand-img" width="60" height="60" alt="">
+         Rain Flower
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav fs-5 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link active"  href="index.html">Home</a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contact.html">Contact Us</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+             </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span id="navDrop">English</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item btn"  onclick="navChangeEnglish()">English</button></li>
+                <li><button class="dropdown-item btn" onclick="navChangeMyanmar()">Myanmar</button></li>
+               
+              </ul>
+            </li>
+             
+          </ul>
+         
+        </div>
+      </div>
+
+    </nav>
+
+    <section id="checkout" class="container-fluid ">
+      <div class="container bg-light">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <div class="mt-5 pt-5">
+              <a class="" data-bs-toggle="collapse" href="#couponInsert" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Have a member card?
+              </a>
+            </div>
+            <div class="collapse mt-3" id="couponInsert">
+              <div class="card card-body">
+                <p>If you have a member card,please apply it below.</p>
+                <div class="input-group mb-3">
+       
+                  <input type="text" class="form-control" placeholder="Member Card Number" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  
+                </div>
+                <button class="btn btn-outline-primary form-control">Apply Member Card</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="">
+              <h3>Billing Details</h3>
+              <hr>
+            </div>
+            <div class="">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01"  required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02"  required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label">Street Address</label>
+                  <input type="text" class="form-control" placeholder="House number and Street name" id="validationCustom01"  required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Yangon</option>
+                    <option>Mandalay</option>
+                    <option>Other</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Township</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label">Phone</label>
+                  <input type="text" class="form-control" placeholder="Phone Number" id="validationCustom01"  required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label">Email address</label>
+                  <input type="text" class="form-control" placeholder="Email" id="validationCustom01"  required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mt-3">
+                    <h3>Your Order</h3>
+                    
+                  </div>
+                  <div class="">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr class="text-danger">
+                          <th scope="col">Product</th>
+                          <th scope="col">Subtotal</th>
+                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Your Product</th>
+                          <td>$250</td>
+                         
+                        </tr>
+                        <tr>
+                          <th scope="row">Total</th>
+                          <td>$250</td>
+                         
+                        </tr>
+                        <tr>
+                          <th scope="row">Delivery</th>
+                          <td>Your Address</td>
+                         
+                        </tr>
+                        <tr>
+                          <th scope="row">Payment</th>
+                          <td>Cash on Delivery</td>
+                         
+                        </tr>
+                    </table>
+                    
+    
+                  </div>
+              </div>
+              <div class="col-12 mb-5">
+                <button class="btn btn-outline-primary form-control" type="submit">Place Order</button>
+              </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+
+
+
+    <section id="footer" class="bg-danger h-75">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="text-center">
+                <img src="assets/logo(Land).png" width="200px" alt="">
+              </div>
+              <div class="ms-3 text-center">
+                <p><i class="fa-solid fa-envelope text-primary pe-2"></i> rainflower@myanmarthiha.com</p>
+                <p><i class="fa-solid fa-phone text-primary pe-3"></i>09-777048090, 09-777048091</p>
+                <a href="https://www.facebook.com/RainFlowerFireExtinguisher/?mibextid=LQQJ4d" class="text-decoration-none pe-2"><i class="fa-brands fa-facebook text-primary pe-2"></i>@RainFlowerFireExtinguisher</a>
+
+              </div>
+          </div>
+            <div class="col-lg-6 mt-3 mt-lg-0">
+              <div class="text-center">
+                  <img src="assets/MTH Group Of Comapnies.png" width="100px" alt="">
+                  <p class="mt-3 fs-5">Rain Flower is proud to be a part of <br class="d-none d-lg-block"><a href="https://www.myanmarthiha.com" class="text-decoration-none text-primary fw-bold">Myanmar Thiha Group of Companies</a> </p>
+              </div>
+            </div>
+        </div>
+        <hr>
+          <div class="col-12">
+            <div class="text-center p-0">
+              <img src="assets/iso-01.png" alt="">
+            </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-info">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center mt-3">
+            <p class="text-white"><i class="fa-regular fa-copyright"></i>2023 Rain Flower.All Rights Reserved.</p>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+ 
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://app.embed.im/snow.js" defer></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="node_modules/atropos/atropos.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+  // const parallaxTl = gsap.timeline({
+  //       ease:'none',
+  //       scrollTrigger:{
+  //         trigger:".photo-blur",
+  //         start: "top bottom",
+  //         scrub: true
+          
+  //       }
+  //   })
+    
+  //   parallaxTl
+    
+  //   .from(".content-wrapper", {duration: 0.4, autoAlpha:0},0.4)
+  //   .from('.bcg',{duration:2,y:'-30%'},0.4)
+
+  const myAtropos = Atropos({
+  el: '.my-atropos',
+  // rest of parameters
+  activeOffset: 40,
+shadowScale: 1,
+
+});
+</script>
+</body>
+</html>

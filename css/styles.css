@@ -25,17 +25,6 @@
   height: 200px;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*=service-img] {
-    width: 80%;
-    height: auto;
-  }
-  [class*=install-img] {
-    width: 40%;
-    height: auto;
-  }
-}
 .nav-link:hover {
   color: #2e3192 !important;
 }
@@ -129,6 +118,17 @@ p, li {
 @media only screen and (max-width: 420px) {
   #htu {
     overflow: scroll;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*=service-img] {
+    width: 80%;
+    height: auto;
+  }
+  [class*=install-img] {
+    width: 40%;
+    height: auto;
   }
 }
 /*!
